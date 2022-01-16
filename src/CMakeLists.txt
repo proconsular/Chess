@@ -1,0 +1,5 @@
+set(CMAKE_CXX_STANDARD 20)
+
+set(SOURCE_FILES state.h data_types.h renderers/renderer.h renderers/piece_renderer.h behaviors/behavior.h receivers/receiver.h event.h entity/entity.h entity/stateful_entity.h state/piece_state.h entity/piece_entity.h state/board_state.h renderers/multi_renderer.h agent.h entity/board_entity.h renderers/board_renderer.h receivers/multi_receiver.h receivers/piece_drag_receiver.h factory.h piece_factory.h pure_states/board.cpp pure_states/board.h constants.h renderers/shape_renderer.h behaviors/piece_translation_behavior.h utils.h behaviors/multi_behavior.h players/player.h players/random_move_ai_player.h players/smart_ai_player.h players/autonomous_player.h utils.cpp scorers/scorer.h scorers/center_scorer.h scorers/development_scorer.h scorers/rim_scorer.h scorers/material_scorer.h scorers/control_scorer.h scorers/aggregate_scorer.h scorers/checkmate_scorer.h)
+
+add_library(source ${SOURCE_FILES})
