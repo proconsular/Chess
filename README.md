@@ -9,6 +9,11 @@ At the moment, you can play as White against Black. The AI is still a work-in-pr
 My goal is to first create an MVP, which I would define as the app having a basic UI that would allow you to pick which side you want.
 Then you can play and the AI is pretty challenging, with potentially a means of adjusting its difficulty before you play.
 
+### Media
+
+Here is a video of some gameplay:
+https://www.youtube.com/watch?v=q2YW3cY-vpY
+
 ### Progress
 
 The first big obstacle technically was writing a thorough algorithm to check whether a move was legal or not. Since the player has to be able to drag a piece and therefore select a move, the first priority was a means to verify if whatever move they made was valid. For instance, a pawn can't move 3 squares, but a player could try to make that move. This took a little while but was straight forward and there are many unit tests to verify many different cases in order to ensure the is_move_legal algorithm works.
